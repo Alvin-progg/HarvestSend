@@ -35,6 +35,9 @@
 //!
 #![no_std]
 
+#[cfg(test)]
+extern crate std;
+
 use soroban_sdk::{contract, contractimpl, contracttype, Address, Env, Symbol, Vec};
 
 #[contracttype]
@@ -130,3 +133,6 @@ impl HarvestSendContract {
 			.unwrap_or(Vec::new(&env))
 	}
 }
+
+	#[cfg(test)]
+	mod test;

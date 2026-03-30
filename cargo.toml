@@ -3,6 +3,7 @@ name = "harvestsend-contract"
 version = "0.1.0"
 edition = "2021"
 description = "Cross-border remittance that turns into verifiable farm income history"
+license = "MIT"
 
 
 [lib]
